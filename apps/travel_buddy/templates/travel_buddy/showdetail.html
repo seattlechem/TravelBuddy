@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Popular Secrets</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'travel_buddy/style.css' %}">
+    </head>
+
+    <body>
+        <div class="container">
+        <div id = "upperleftmenu">
+            <h4></h4>
+        
+        </div>
+        <div id="uppermenu">
+            <a href="/travel" style="margin: 20px">Home</a> | <a href="/logout" style="margin: 20px">Logout</a>
+        </div>
+      <div class="container">
+          <table>
+              <tbody>
+                  <thead>
+                      <th><h3>{{travel.destination}}</h3></th>
+                  </thead>
+                  <tr>
+                      <td><b>Planed By:</b>  {{travel.creator.name}}</td>
+                  </tr>
+                  <tr>
+                       <td><b>Description:</b>  {{travel.description}}</td>
+                  </tr>
+                  <tr>
+                       <td><b>Travel Date From:</b>  {{travel.start}}</td>
+                  </tr>
+                  <tr>
+                        <td><b>Travel Date To:</b>  {{travel.end}}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+          <br>
+      <div class="container">
+          <h4>Other User's Joining the Trip</h4>
+              {%for user in others%}
+                 <h5> {{user.name}}</h5>
+              {%endfor%}
+          
+    </body>
+</html>

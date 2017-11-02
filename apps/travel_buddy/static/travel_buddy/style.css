@@ -1,0 +1,72 @@
+.div {
+  position: relative;
+}
+
+.container {
+  width: 780px;
+  display: block;
+}
+#uppermenu {
+  float: right;
+
+}
+
+#upperleftmenu {
+  float: left;
+}
+
+.usertable{
+  display: block;
+  
+}
+#register {
+  float: left; 
+  width: 30%;
+  background: lightgreen; 
+  border: 5px solid black;
+  padding: 10px;
+  margin: 50px;
+}
+
+#login {
+  float: right; 
+  width: 30%;
+  /* background: lightblue; */
+  border: 5px solid black;
+  padding: 10px;
+  margin: 50px;
+  
+}
+
+
+label{
+    display:inline-block;
+    width:100px;
+}
+
+#button {
+    margin-top: 30px;
+    margin-left: 110px;
+
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input, textarea {
+    background-color: #3CBC8D;
+    color: white;
+}
+
+label {
+  width: 125px;
+  line-height: 30px;
+  
+}
